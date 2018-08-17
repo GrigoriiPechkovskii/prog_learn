@@ -130,15 +130,17 @@ plt.contour(X, Y, Z, colors='black');
 
 plt.style.use('ggplot')
 
+'''
 
-
-data = np.random.randn(1000)
-
-plt.hist(data, bins=300, normed=True, alpha=0.5,
-histtype='stepfilled', color='steelblue',
-edgecolor='none');
+data = np.random.randn(100)
+data2 = data + 5
+plt.hist(data, bins=100, alpha=1,color='blue',edgecolor='black');
+plt.hist(data2, bins=100, alpha=1,color='red',edgecolor='black');
 
 '''
+plt.hist(data, bins=300, normed=True, alpha=1,
+histtype='stepfilled', color='steelblue',
+edgecolor='none');
 
 
 
@@ -151,7 +153,7 @@ plt.figure()
 # После нанесения графического элемента в виде маркера
 # список текущих областей состоит из одной области
 print (fig1.axes)
-
+'''
 
 plt.show()
 

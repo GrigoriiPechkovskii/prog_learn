@@ -48,9 +48,9 @@ vals2.dtype
 
 print('end')
 
-area = pd.Series({'California': '423967', 'Texas': '695662',
-'New York': '141297', 'Florida': '170312',
-'Illinois': '149995'},dtype ='<U1')
+area2 = pd.Series({'California2': '123', 'Texas2': '34',
+'New York2': '1232', 'Florida2': '2343',
+'Illinois2': '2312'},dtype ='<U1')
 
 q = {'California': '423967', 'Texas': '695662',
 'New York': '141297', 'Florida': '170312',
