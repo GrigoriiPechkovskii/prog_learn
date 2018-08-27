@@ -13,7 +13,7 @@ def matreshka(n):
 
 import graphics as gr 
 
-window = gr.GraphWin("Russia game",600,600)
+#window = gr.GraphWin("Russia game",600,600)
 alpha = 0.05
 
 def fractal_rectangle(A, B, C, D, deep=10):
@@ -27,7 +27,30 @@ def fractal_rectangle(A, B, C, D, deep=10):
 	D1 = (D[0]*(1-alpha) + A[0]*alpha, D[1]*(1-alpha) + A[1]*alpha)
 	fractal_rectangle(A1, B1, C1, D1, deep-1)
 
-fractal_rectangle((100,100), (500,100), (500,500), (100,500),50)
+#fractal_rectangle((100,100), (500,100), (500,500), (100,500),50)
 
+def f(n:int):
+	assert n>=0, 'Factorial is not defined'
+	if n == 0:
+		return 1
+	return f(n-1)*n
+
+print(f(5))
+
+def gcd(a,b):
+	if a==b:
+		return a
+	elif a > b:
+		return gcd(a-b,b)
+	else: #a < b
+		return gcd(a,b-a)
+
+def gcd(a,b):
+	if b==0:
+		return a
+	else: #a < b
+		return gcd(b,a%b)
+
+print(gcd(10,15))
 
 print('end')
