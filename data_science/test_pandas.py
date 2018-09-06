@@ -65,3 +65,9 @@ for i in range(100000):
     tt()
 time_end = time.time()
 print('1===',time_end-time_start)
+
+ar2 = np.zeros((5, 5)) +100
+ar3 = np.arange(10, 30, 5)
+ar = np.array([100]*5)
+data = pd.DataFrame(ar2,columns = ['seq1','seq2','seq3','seq4','seq5'],
+    index = ['seq1_','seq2_','seq3_','seq4_','seq5_'])

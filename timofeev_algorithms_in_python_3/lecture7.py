@@ -38,6 +38,7 @@ def f(n:int):
 print(f(5))
 
 def gcd(a,b):
+	'''Алгориттм Евклида'''
 	if a==b:
 		return a
 	elif a > b:
@@ -51,6 +52,24 @@ def gcd(a,b):
 	else: #a < b
 		return gcd(b,a%b)
 
+def gcd(a,b):
+	return a if b == 0 else gcd(b,a%b)
+
 print(gcd(10,15))
+
+#быстрое возведение в степень
+def pow(a:float,n:int):
+	if n == 0:
+		return 1
+	else:
+		return pow(a,n-1)*a
+
+def pow2(a:float,n:int):
+	if n == 0:
+		return 1
+	elif n%2 == 1: #нечетные
+		return pow(a,n-1)*a
+	else: #четное
+		return pow(a**2,n//2)
 
 print('end')
